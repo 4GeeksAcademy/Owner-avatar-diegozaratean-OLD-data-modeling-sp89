@@ -15,28 +15,6 @@ class Person(Base):
     name = Column(String(250), nullable=False)
 
 
-class Actor(Base):
-    __tablename__ = 'actor'
-    # Here we define columns for the table person
-    # Notice that each column is also a normal Python instance attribute.
-    id = Column(Integer, primary_key=True)
-    nombre = Column(String(250), nullable=False)
-    nacionalidad = Column(String(250), nullable=False)
-
-		
-
-
-
-class Pelicula(Base):
-    __tablename__ = 'pelicula'
-    # Here we define columns for the table person
-    # Notice that each column is also a normal Python instance attribute.
-    id = Column(Integer, primary_key=True)
-    titulo = Column(String(250), nullable=False)
-    duracion = Column(Integer, nullable=False)
-    genero = Column(String(250), nullable=False)
-
-
 class Address(Base):
     __tablename__ = 'address'
     # Here we define columns for the table address.
